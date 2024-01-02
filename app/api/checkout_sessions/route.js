@@ -32,7 +32,7 @@ export async function POST(req,res) {
         success_url: `${process.env.PUBLIC_URL}/?success=true`,
         cancel_url: `${process.env.PUBLIC_URL}/?canceled=true`,
       });
-      console.log(session.url)
+      //console.log(session.url)
       return NextResponse.json(session)
       
     } catch (err) {
